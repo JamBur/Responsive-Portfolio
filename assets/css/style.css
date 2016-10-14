@@ -1,0 +1,527 @@
+body {
+	background: url("../images/concrete_seamless.png");
+	font-size: 18px;
+	line-height: 34px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*general*/
+
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	clear: both;
+}
+h1, 
+h2,
+h3,
+p {
+	margin-bottom: 20px;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+h1, h2, h3 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: 700;
+	color: #4aaaa5;
+}
+h1 {
+	font-size: 30px;
+	line-height: 49px;
+	border-bottom: 3px solid #ddd;
+	padding-bottom: 20px;
+}
+h2,
+h3 {
+	font-size: 22px;
+}
+
+/*header*/
+
+#masthead {
+	background: #fff;
+	margin: 0 0 30px;
+	z-index: 99;
+	color: #fff;
+	overflow: auto;
+	border-bottom: 2px solid #ccc;
+	position: fixed;
+	width: 100%;
+}
+#logo {
+	width: 250px;
+	height: 90px;
+	background: #4aaaa5;
+	float: left;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	text-align: center;
+	line-height: 90px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 30px;
+	text-decoration: none;
+}
+nav {
+	float: right;
+	margin-top: 25px;
+}
+nav a {
+	color: #999;
+	text-decoration: none;
+	margin-left: 15px;
+	display: inline-block;
+	border-left: 1px solid #efefef;
+	padding-left: 15px;
+	line-height: 18px;
+}
+nav a:first-child {
+	border-left: 0 none;
+}
+
+/*footer*/
+
+footer {
+	background: #666;
+	color: #fff;
+	padding: 30px 0;
+	clear: both;
+	border-top: 8px solid #4aaaa5;
+	color: #ccc;
+	font-size: 12px;
+	text-align: center;
+}
+
+/*sidebar*/
+
+.sidebar {
+	background: #fff;
+	padding: 30px;
+	width: 100%;
+	max-width: 270px;
+	float: right;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+h3,
+.sidebar h2 {
+	border-bottom: 2px solid #eee;
+	padding-bottom: 20px;
+	margin-bottom: 15px;
+	line-height: 22px;
+}
+.social {
+	width: 62px;
+	height: 62px;
+	margin-top: 8px;
+	margin-right: 5px;
+}
+.social:last-child {
+	margin-right: 0;
+}
+
+/*main*/
+
+#main-container {
+	padding-top: 130px;
+}
+.main-section {
+	background: #fff;
+	padding: 30px;
+	margin: 0 0 40px 0;
+	width: 100%;
+	max-width: 650px;
+	float: left;
+	border: 1px solid #ddd;
+}
+
+/*portfolio page*/
+
+.work {
+	width: 274px;
+	overflow: auto;
+	position: relative;
+	float: left;
+	margin: 20px 0 25px;
+}
+.work:nth-child(even) {
+	margin-right: 40px;
+}
+.work img {
+	width: 100%;
+	border: 0 none;
+	opacity: .8;
+}
+.work h3 {
+	border-bottom: 0;
+	background: #4aaaa5;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	padding: 15px;
+	width: 100%;
+	bottom: 20px;
+	line-height: 30px;
+	margin-bottom: 0;
+	font-weight: 300;
+}
+.auth-image {
+	width: 200px;
+	height: auto;
+	margin-top: 10px;
+	float: left;
+	margin-right: 25px;
+}
+
+/*contact page*/
+
+#contact-form ul {
+	margin-bottom: 20px;
+}
+#contact-form li {
+	margin-bottom: 10px;
+}
+label,
+input[type=text],
+input[type=email],
+textarea {
+	display: block;
+	width: 100%;
+}
+input[type=text],
+input[type=email],
+textarea {
+	height: 35px;
+	border: 1px solid #ddd;
+	padding: 0 10px;
+	font-size: 14px;
+}
+textarea {
+	height: 200px;
+}
+input[type=submit] {
+	background: #4aaaa5;
+	border: 0 none;
+	color: #fff;
+	font-size: 18px;
+	padding: 10px 30px;
+	cursor: pointer;
+}
+
+/*View for max-width: 980px */
+
+@media screen and (max-width: 980px) {
+
+/*contact- form font */
+
+label,
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+input[type=text],
+input[type=email],
+textarea {
+	display: block;
+	width: 100%;
+}
+input[type=text],
+input[type=email],
+textarea {
+	height: 35px;
+	border: 1px solid #ddd;
+	padding: 0 10px;
+	font-size: 14px;	
+	font-weight: 500;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+textarea {
+	height: 200px;
+}
+input[type=submit] {
+	background: #4aaaa5;
+	border: 0 none;
+	color: #fff;
+	font-size: 18px;
+	padding: 6.5px 30px;
+	cursor: pointer;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/*portfolio- image fill space*/
+
+.work {
+	width: 100%;
+	overflow: auto;
+	position: relative;
+	float: left;
+	margin: 20px 0 25px;
+}
+
+/*Make image fill space and add space before text*/
+
+.auth-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+
+/*Size main section with screenshot*/
+
+.main-section {
+	background: #fff;
+	padding: 30px;
+	margin: 0 0 40px 0;
+	width: 100%;
+	max-width: 420px;
+	float: left;
+	border: 1px solid #ddd;
+}
+
+/*Align container with screenshot*/
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin-left: 126px;
+	clear: both;
+}
+
+/*Align nav with screenshot*/
+
+nav {
+	float: right;
+	margin-top: 25px;
+	margin-right: 232px;
+}
+
+/*Align sidebar with screenshot*/
+
+.sidebar {
+	background: #fff;
+	padding: 30px;
+	width: 100%;
+	max-width: 270px;
+	float: right;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+	margin-right: 232px;
+}
+
+/*center footer text*/
+footer {
+	background: #666;
+	color: #fff;
+	padding: 30px 0;
+	clear: both;
+	border-top: 8px solid #4aaaa5;
+	color: #ccc;
+	font-size: 12px;
+	text-align: center;
+	text-indent: -232px;
+	word-spacing: .2px;
+}
+
+/* Additional Screen Sizes */
+
+/*View for max-width: 768px */
+@media screen and (max-width: 768px) {
+
+/* porfolio- revert images and adjustment */
+
+.work {
+	width: 313px;
+	overflow: auto;
+	position: relative;
+	float: left;
+	margin: 20px 0 10px;
+}
+
+/* Revert & enlarge image */
+
+.auth-image {
+	width: 333px;
+	height: auto;
+	margin-top: 10px;
+	float: left;
+	margin-right: 25px;
+}
+
+/* Revert main section; adjust margin */
+
+.main-section {
+	background: #fff;
+	padding: 30px;
+	margin: 0px 0px 30px 20px;
+	width: 100%;
+	max-width: 728px;
+	float: left;
+	border: 1px solid #ddd;
+}
+
+/* Revert container */
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	clear: both;
+}
+
+/* Adjust name at top left */
+
+#masthead {
+	background: #fff;
+	margin: 0 0 30px;
+	z-index: 99;
+	color: #fff;
+	overflow: auto;
+	border-bottom: 2px solid #ccc;
+	position: fixed;
+	width: 100%;
+}
+
+/* White space left of header logo */
+
+#logo {
+	width: 250px;
+	height: 90px;
+	background: #4aaaa5;
+	float: left;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	text-align: center;
+	line-height: 90px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 30px;
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+/* Revert nav */
+
+nav {
+	float: right;
+	margin-top: 25px;
+	margin-right: 20px;
+}
+
+/* Revert sidebar, adjust max width and margins*/
+
+.sidebar {
+	background: #fff;
+	padding: 30px;
+	width: 100%;
+	max-width: 728px;
+	float: left;
+	border: 1px solid #ddd;
+	margin: 10px 0px 40px 20px;
+}
+
+/*revert footer*/
+
+footer {
+	background: #666;
+	color: #fff;
+	padding: 30px 0;
+	clear: both;
+	border-top: 8px solid #4aaaa5;
+	color: #ccc;
+	font-size: 12px;
+	text-align: center;
+	text-indent: 0px;
+}
+
+/*View for max-width: 640px */
+@media screen and (max-width: 640px) {
+
+/* portfolio-adjust image */
+
+.work {
+	width: 100%;
+	overflow: auto;
+	position: relative;
+	float: left;
+	margin: 20px 0 10px;
+}
+
+/* Revert masthead*/
+
+#masthead {
+	background: #fff;
+	margin: 0 0 30px;
+	z-index: 99;
+	color: #fff;
+	overflow: auto;
+	border-bottom: 2px solid #ccc;
+	position: fixed;
+	width: 100%;
+}
+
+/* Revert and expand header logo */
+
+#logo {
+	width: 100%;
+	height: 90px;
+	background: #4aaaa5;
+	float: left;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	text-align: center;
+	line-height: 90px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 30px;
+	text-decoration: none;
+	margin-left: 0px;
+}
+
+/* Adjust nav and enclosed text */
+
+nav {
+
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 100%;
+	text-align: center;
+	word-spacing: 120px;
+}
+
+/* Revert and adjust main section */
+
+.main-section {
+	background: #fff;
+	padding: 30px;
+	margin: 0 0 40px 0;
+	width: 100%;
+	max-width: 600px;
+	float: left;
+	border: 1px solid #ddd;
+	margin: 46px 40px 0px 20px;
+}
+/* Enlarge image */
+
+.auth-image {
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	float: left;
+	margin-right: 25px;
+}
+
+/* expand sidebar and adjust margins */
+
+.sidebar {
+	background: #fff;
+	padding: 30px;
+	width: 100%;
+	max-width: 600px;
+	float: right;
+	border: 1px solid #ddd;
+	margin: 40px 20px 40px 20px;
+}
